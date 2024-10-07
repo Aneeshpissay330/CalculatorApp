@@ -1,9 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { reduxStorage } from './storage';
 import { persistReducer, persistStore } from 'redux-persist';
+import calculatorReducer from '../features/calculator';
 
 const rootReducer = combineReducers({
-
+    calculator: calculatorReducer
 });
 
 const persistConfig = {
